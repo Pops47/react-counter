@@ -45,12 +45,20 @@ button {
   background-color: white;
   border: 0;
 }
+.wide-left-button {
+  width: 0.8rem;
+}
+.wide-right-button {
+  width: 1.7rem;
+}
+
 .main > button {
   width: 5rem;
   height: 2rem;
   font-size: 1rem;
   border: 0;
 }
+
 .top p {
   width: 5rem;
   height: 5rem;

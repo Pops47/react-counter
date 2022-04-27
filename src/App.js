@@ -13,21 +13,29 @@ function App() {
       </header>
       <main className="main">
         <div className="top">
-          <button
-            onClick={() => {
-              setCounter(counter - 1);
-            }}
-          >
-            {counter === 0 ? "" : "-"}
-          </button>
+          {counter === 0 ? (
+            <div className="wide-left-button"></div>
+          ) : (
+            <button
+              onClick={() => {
+                setCounter(counter - 1);
+              }}
+            >
+              -
+            </button>
+          )}
           <p className="blue-bgc">{counter}</p>
-          <button
-            onClick={() => {
-              setCounter(counter + 1);
-            }}
-          >
-            {counter === 10 ? "" : "+"}
-          </button>
+          {counter === 10 ? (
+            <div className="wide-right-button"></div>
+          ) : (
+            <button
+              onClick={() => {
+                setCounter(counter + 1);
+              }}
+            >
+              +
+            </button>
+          )}
         </div>
         <button
           className="blue-bgc"
